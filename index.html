@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link src="//normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
+
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
   <!-- Jquery script-->
     
@@ -16,14 +17,13 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
-  
+  <link href="css/parallax.css" rel="stylesheet">
   </head>
 
 <body data-spy="scroll" data-offset="0" data-target=".navbar">
-  <div class="container">
+  <div class="container-fluid">
 
-  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-    <div class="container-fluid">
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
       <nav class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -38,71 +38,89 @@
         <div class="projectname">
           <a ref="#">Portfolio</a>
         </div>
-          <ul class="nav navbar-nav">
-            <li><a href="#index">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-      </nav><!-- end navbar collapse -->
-    </div><!--container end -->    
-  </nav> <!-- navbar ends here -->
+        <ul class="nav navbar-nav">
+          <li><a href="#index">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav><!-- end navbar collapse -->    
+    </nav> <!-- navbar ends here -->
+    <div class="parallax">  
+      <div class="parallax_layer parallax_layer-back">
+        <div class="row" id="index">
+          <div class="col-md-6">
+            <p>Brand Logo
+            </p>
+          </div>
+          <div class="col-md-6 text-right">
+            <h1>
+              John Meas
+            </h1>
+            <h2>
+              Frontend Web Developer
+            </h2>
+          </div>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-md-12 center-block splash-img">
+            <img src="img/bamboo-forest.jpg" class="img-responsive" alt="bamboo pic">
+          </div>
+        </div>
+      </div> <!-- parallax back end -->  
+      <div class="parallax_layer parallax_layer-base">  
+        <div class="row">
+          <div class="col-md-12">
+            <h3>
+              Featured Work
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-3">
+            <img src="img/placeimg_forest.jpg" class="img-responsive" alt="forest pic">
+          </div>
+          <div class="col-md-3">
+            <img src="img/placeimg_tree.jpg" class="img-responsive" alt="tree pic">
+          </div>
+          <div class="col-md-3">
+            <img src="img/placeimg_water.jpg" class="img-responsive" alt="water pic">
+          </div>
+          <div class="col-md-3">
+            <img src="img/placeimg_desert.jpg" class="img-responsive" alt="desert pic">
+          </div>
+        </div>
+        <div>
+          <section id="about" >
+            <h1>About</h1>
+              <p>Some written stuff about me</p>
+          </section>
 
-    <div class="row" id="index">
-      <div class="col-md-6">
-      <p>Brand Logo
-      </p>
-      </div>
-      <div class="col-md-6 text-right">
-        <h1>
-          John Meas
-        </h1>
-        <h2>
-          Frontend Web Developer
-        </h2>
-      </div>
-      <hr>
-    </div>
-    <div class="row">
-      <div class="col-md-12 center-block splash-img">
-        <img src="img/bamboo-forest.jpg" class="img-responsive" alt="bamboo pic">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-12">
-      <h3>
-        Featured Work
-      </h3>
-      </div>
-    </div>
-    <div class="row">
-      <div class="col-md-3">
-        <img src="img/placeimg_forest.jpg" class="img-responsive" alt="forest pic">
-      </div>
-      <div class="col-md-3">
-        <img src="img/placeimg_tree.jpg" class="img-responsive" alt="tree pic">
-      </div>
-      <div class="col-md-3">
-        <img src="img/placeimg_water.jpg" class="img-responsive" alt="water pic">
-      </div>
-      <div class="col-md-3">
-        <img src="img/placeimg_desert.jpg" class="img-responsive" alt="desert pic">
-      </div>
-    </div>
-    <div>
-    <section id="about" >
-      <h1>About</h1>
-      <p>Some written stuff about me</p>
-    </section>
+          <section id="contact">
+            <h1>Contact</h1>
+          </section>
 
-    <section id="contact">
-      <h1>Contact</h1>
-    </section>
+          <footer>&copy;John Meas 2015 | All Rights Reserved 
+          </footer>
+        </div>
+      </div> <!--parallax base end -->
+    </div> <!--parallax end -->
+  </div> <!-- container-fluid end -->   
 
-    <footer>&copy;John Meas 2015 | All Rights Reserved 
-    </footer>
-  </div>
 
-     <script type="text/javascript">
+    
+    
+    <script type="text/javascript">
+      $('.nav a').on('click', function(){
+      $(".navbar-toggle").click() //bootstrap 3.x by Richard
+      });
+    </script>
+    <script src="js/jquery.bootstrap-autohidingnavbar.js"></script>
+    <script>
+      $("nav.navbar-fixed-top").autoHidingNavbar();
+    </script>
+    
+    <script type="text/javascript">
       var $root = $('html, body');
         $('.navbar-nav a').click(function() {
           var href = $.attr(this, 'href');
@@ -114,19 +132,7 @@
           return false;
         });
     </script>
-    <script type="text/javascript">
-      $(".navbar-fixed-top").autoHidingNavbar()
-    </script>
-    <script type="text/javascript">
-  $('.nav a').on('click', function(){
-    
-    $(".navbar-toggle").click() //bootstrap 3.x by Richard
-});
-</script>
-<script src="js/jquery.bootstrap-autohidingnavbar.js"></script>
-  <script>
-  $("nav.navbar-fixed-top").autoHidingNavbar();
-  </script>
+  
 
    <!-- <script type="text/javascript">
 $(document).ready(function(){
