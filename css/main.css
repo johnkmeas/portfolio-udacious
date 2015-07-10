@@ -1,0 +1,77 @@
+
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+/*@media only screen and (max-width: 400px) {
+	p {
+		background-color: pink;
+	}
+}
+*/
+
+body {
+	margin-top: 10%;
+	background-color: blue;
+	overflow-x: hidden;
+}
+/*.container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+*/
+/* Class */
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#about {
+	padding: 10px;
+	background-color: turquoise;
+}
+img,
+embed,
+object, 
+video {
+	max-width: 100%;
+
+}
+
+img {
+}
+p {
+	font-size: 16px;
+	line-height: 1.2em;
+}
+
+nav a,
+button {
+	min-width: 48px;
+	min-height: 48px;
+	z-index: 100;
+}
+
+#about, 
+#contact {
+	position: relative;
+
+	padding-bottom: 100%;
+}
+.featured {
+	max-width: 50%;
+}
+
+.logo {
+	display:block;
+	position: fixed;
+	z-index: 100;
+}
+
