@@ -17,7 +17,7 @@
 
 body {
 	margin-top: 10%;
-	background-color: #CDD2FA;
+	background-color: white;
 	overflow-x: hidden;
 }
   .container-fluid {
@@ -58,19 +58,19 @@ button {
 
 
 .text-flash {
-	background-color: #F272A7;
+	
 }
 
 .write-up {
-	background-color: #72F2D7
+	
 }
 
 .about-head {
-	background-color: #72F2A3;
+	
 }
 
 .contact-head {
-	background-color: #72F2A3;
+	
 }
 
 .featured {
