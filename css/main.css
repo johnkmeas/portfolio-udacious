@@ -21,7 +21,7 @@ body {
 	overflow-x: hidden;
 }
   .container-fluid {
-	max-width: 992px;
+	max-width: 733px;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -33,10 +33,6 @@ body {
   margin-right: auto;
 }
 
-#about {
-	padding: 10px;
-	background-color: turquoise;
-}
 img,
 embed,
 object, 
@@ -61,23 +57,21 @@ button {
 }
 
 
-
-#about, 
-#contact {
-	position: relative;
-
-	padding-bottom: 100%;
-}
-
 .text-flash {
 	background-color: #F272A7;
+}
+
+.write-up {
+	background-color: #72F2D7
 }
 
 .about-head {
 	background-color: #72F2A3;
 }
 
-.about
+.contact-head {
+	background-color: #72F2A3;
+}
 
 .featured {
 	max-width: 50%;
@@ -91,4 +85,17 @@ button {
 
 .splash-img {
 	float: center;
+}
+
+.portrait {
+	
+	width: 40%;
+	float: left;
+	padding: 2%;
+
+}
+
+.write-up {
+	width: 100%;
+	padding: 10px;
 }
