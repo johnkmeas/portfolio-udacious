@@ -1,7 +1,12 @@
 .navbar {
   opacity: 0.7;
 }
-/*
-@media screen and (min-width: 641px)
 
-@media screen and (min-width: 961px)
+/*@media screen and (min-width: 992px) {
+	.container-fluid{
+		width: 992px;
+	}
+
+}
+
+@media screen and (min-width: 961px) {}

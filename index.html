@@ -57,7 +57,7 @@
       </div>
       <hr>
     </div>
-    <div class="row">
+    <div class="row" id>
       <div class="col-md-12 center-block splash-img">
         <img src="img/bamboo-forest.jpg" class="img-responsive" alt="bamboo pic">
       </div>
@@ -70,24 +70,36 @@
       </div>
     </div>
     <div class="row">
-      <div class="col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <img src="img/placeimg_forest.jpg" class="img-responsive" alt="forest pic">
       </div>
-      <div class="col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <img src="img/placeimg_tree.jpg" class="img-responsive" alt="tree pic">
       </div>
-      <div class="col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <img src="img/placeimg_water.jpg" class="img-responsive" alt="water pic">
       </div>
-      <div class="col-md-3">
+      <div class="col-xs-6 col-sm-3">
         <img src="img/placeimg_desert.jpg" class="img-responsive" alt="desert pic">
       </div>
     </div>
     <div>
       <section id="about" >
-        <h1>About</h1>
-        <p>Some written stuff about me</p>
+        <div class="col-xs-12 col-sm-3 about-head">
+          <h1>About</h1>
+        </div>
+        <div class="col-xs-12 col-sm-3 text-flash" >
+          <h2> I enjoy <div id="rotate"> <div>creation</div> <div>novelty</div> <div>laughter</div><div>peace</div><div>and flashing</div><div>words</div></div></h2>
+        </div>
+
+        <div class="col-xs-6 col-sm-3">
+          <img src="" alt="portrait pic">
+        </div>
       </section>
+      <section>
+        
+      </section>
+    
 
       <section id="contact">
         <h1>Contact</h1>
@@ -120,6 +132,45 @@
           });
           return false;
         });
+    </script>
+    <script type="text/javascript">
+      (function($){
+    $.fn.extend({ 
+        rotaterator: function(options) {
+ 
+            var defaults = {
+                fadeSpeed: 500,
+                pauseSpeed: 100,
+        child:null
+            };
+             
+            var options = $.extend(defaults, options);
+         
+            return this.each(function() {
+                  var o =options;
+                  var obj = $(this);                
+                  var items = $(obj.children(), obj);
+          items.each(function() {$(this).hide();})
+          if(!o.child){var next = $(obj).children(':first');
+          }else{var next = o.child;
+          }
+          $(next).fadeIn(o.fadeSpeed, function() {
+            $(next).delay(o.pauseSpeed).fadeOut(o.fadeSpeed, function() {
+              var next = $(this).next();
+              if (next.length == 0){
+                  next = $(obj).children(':first');
+              }
+              $(obj).rotaterator({child : next, fadeSpeed : o.fadeSpeed, pauseSpeed : o.pauseSpeed});
+            })
+          });
+            });
+        }
+    });
+})(jQuery);
+
+ $(document).ready(function() {
+        $('#rotate').rotaterator({fadeSpeed:400, pauseSpeed:700});
+ });
     </script>
   
 
