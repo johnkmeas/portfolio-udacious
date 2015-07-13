@@ -1,5 +1,14 @@
 h1 {
-  font-family: 'Alfa Slab One', futura, helvetic, sans-serif;
+  font-family: 'Alfa Slab One', futura, helvetica, sans-serif;
+}
+
+h2,
+h3 {
+  font-family: futura, helvetica, arial, sans-serif;
+}
+
+p {
+  font-family: arial, helvetica, sans-serif;
 }
 /*@media screen and (min-width: 992px) {
 	.container-fluid{

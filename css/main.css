@@ -47,6 +47,7 @@ img:last-of-type {
 	margin-right: 0;
 }
 p {
+	padding: 6%;
 	font-size: 16px;
 	line-height: 1.2em;
 }
@@ -60,7 +61,7 @@ button {
 
 .first-pg, 
 .about-pg, 
-.thumbnail,
+.thumb-nail,
 .contact-pg
 {
 	height: 100vh;
@@ -73,7 +74,7 @@ button {
 }
 
 .logo {
-	margin-left: 10%;
+	margin-left: 1%;
 	
 }
 @media only screen and (max-width: 767px) {
@@ -115,13 +116,18 @@ button {
 }
 
 .text-flash {
-	margin-left: 4vw; 
+	padding: 0 6%; 
 }
 
 .my-name {
 	margin-top:5%;
-	left: 15%;
+	right: 2%;
 }
+
+.header {
+	padding: 3% 6%;
+}
+
 
 footer {
 	text-align: center;
