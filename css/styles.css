@@ -1,7 +1,6 @@
-.navbar {
-  opacity: 0.7;
+h1 {
+  font-family: 'Alfa Slab One', futura, helvetic, sans-serif;
 }
-
 /*@media screen and (min-width: 992px) {
 	.container-fluid{
 		width: 992px;

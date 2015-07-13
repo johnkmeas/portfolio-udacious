@@ -21,11 +21,12 @@ body {
 	overflow-x: hidden;
 }
   .container-fluid {
-	max-width: 733px;
+	max-width: 960px;
 	margin-left: auto;
 	margin-right: auto;
+	background-color: #86BC99;
 }
-*/
+
 /* Class */
 .center-block {
   display: block;
@@ -63,7 +64,7 @@ button {
 .contact-pg
 {
 	height: 100vh;
-	background-color: red;
+	background-color:#9BD6D9;
 }
 
 .first-pg {
@@ -71,33 +72,29 @@ button {
 
 }
 
-.text-flash {
-	
-}
-
-.write-up {
-	
-}
-
-.about-head {
-	
-}
-
-.contact-head {
-	
-}
-
-
-
 .logo {
-	display:block;
-	position: fixed;
-	z-index: 100;
+	margin-left: 10%;
+	
+}
+@media only screen and (max-width: 767px) {
+	.logo {
+		margin-top: 5%;
+		height:100px;
+		width:100px;
+		z-index: 100;
+	}
 }
 
-.splash-img {
-	float: center;
+@media only screen and (min-width: 768px) {
+	.logo {
+		margin-top:5%;
+		height: 160px;
+		width: 160px;
+		z-index: 100;
+	}
 }
+
+
 
 .portrait {
 	
@@ -112,4 +109,21 @@ button {
 	padding: 10px;
 }
 
+.text-lft {
+	
+	padding-left:10vw;
+}
 
+.text-flash {
+	margin-left: 4vw; 
+}
+
+.my-name {
+	margin-top:5%;
+	left: 15%;
+}
+
+footer {
+	text-align: center;
+	margin-bottom: 10%;
+}

@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 	<link src="//normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
-
+  <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
   <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
   <!-- Jquery script-->
     
@@ -17,7 +17,9 @@
 
   <link href="css/main.css" rel="stylesheet">
   <link href="css/styles.css" rel="stylesheet">
+  
   <link href="css/animate.css" rel="stylesheet">
+  
   </head>
 
 <body data-spy="scroll" data-offset="0" data-target=".navbar">
@@ -38,18 +40,18 @@
         </div>
         <ul class="nav navbar-nav">
           <li><a href="#index">Home</a></li>
-          <li><a href="#featured">portfolio</a></li>
+          <li><a href="#portfolio">portfolio</a></li>
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav><!-- end navbar collapse -->    
     </nav> <!-- navbar ends here -->
-    <div class="row first-pg" id="index">
-      <div class="col-md-6">
-        <p>Brand Logo
+    <div class="row-fluid first-pg" id="index">
+      <div class="col-xs-2 col-sm-6 logo">
+        <img src="img/namelogo.svg">
         </p>
       </div>
-      <div class="col-sm-12 text-right">
+      <div class="col-xs-10 col-sm-6 my-name text-right">
         <h1>
           John Meas
         </h1>
@@ -57,56 +59,85 @@
           Frontend Web Developer
         </h3>
       </div>
-      <hr>
-      <div class="row" >
-        <div class="col-sm-12 center-block splash-img">
+    
+      <div class="row-fluid" >
+      <div class="col-xs-12 col-sm-12 text-lft">
+        <h2 class="tlt"> 
+          <ul class="texts">
+            <li data-out-effect="flipInX" data-out-sequence="true">CSS Magician...</li>   
+            <li data-in-effect="fadeIn">in Training</li>
+          </ul>
+        </h2>
+      </div>
+      <div class="col-xs-4 col-sm-6">
+
+      </div>
+        <div class="col-xs-8 col-sm-6 center-block splash-img">
           <picture>
-            <source media="(min-width: 768px)" srcset="img/cliff-splash.png">
+            <source media="(min-width: 768px") srcset="img/cliff-splash.png">
+        
             <img src="img/cliff-smsplash.png" class="img-responsive" alt="dog clifford pic">
+          </picture>
         </div>
       </div>
-      <div class="col-sm-12 text-left">
-        <h1 class="tlt"> 
-          <ul class="texts">
-            <li data-out-effect="flipInX" data-out-shuffle="true">Some Title</li>   
-            <li data-in-effect="fadeIn">Another Title</li>
-          </ul>
-        </h1>
-      </div>
+      
     </div><!-- first page end -->
-    <div class="row thumbnail" >
+    <div class="row-fluid thumbnail" >
       <div class="col-md-12">
-        <h1 class="tlt" data-in-effect="rollIn">Title</h1>
+        <h1>Portfolio</h1>
       </div>
    
-      <div class="row" class="featured">
+      <div class="row-fluid" id="portfolio">
         <div class="col-xs-6 col-sm-3">
-          <img src="img/cliffs-bars.jpg" class="img-responsive" alt="dog in jail pic">
+          <picture>
+            <source media="(max-width: 767px") srcset="img/cliff-smbars.jpg">
+            <source media="(min-width: 768px") srcset="images_src/cliffs-bars-300_2x.jpg 2x, images_src/cliffs-bars-300_1x.jpg 1x">
+            <img src="img/cliffs-bars.jpg" class="img-responsive" alt="dog in jail pic">
+          </picture>
         </div>
         <div class="col-xs-6 col-sm-3">
-          <img src="img/cliffs-cape.jpg" class="img-responsive" alt="tree pic">
+          <picture>
+            <source media="(max-width: 767px") srcset="img/cliffs-smcape.jpg">
+            <source media="(min-width: 768px") srcset="images_src/cliffs-cape-300_2x.jpg 2x, images_src/cliffs-cape-300_1x.jpg 1x">
+            <img src="img/cliffs-cape.jpg" class="img-responsive" alt="tree pic">
+          </picture>
+        
         </div>
         <div class="col-xs-6 col-sm-3">
-          <img src="img/cliffs-bear.jpg" class="img-responsive" alt="dog cuddle pic">
+          <picture>
+            <source media="(max-width: 767px") srcset="img/cliff-smbear.jpg">
+            <source media="(min-width: 768px") srcset="images_src/cliffs-bear-300_2x.jpg 2x, images_src/cliffs-bear-300_1x.jpg 1x">
+            <img src="img/cliffs-bear.jpg" class="img-responsive" alt="dog cuddle pic">
+          </picture>
+          
         </div>
         <div class="col-xs-6 col-sm-3">
-          <img src="img/cliffs-basket.jpg" class="img-responsive" alt="dog in basket.pic">
+          <picture>
+            <source media="(max-width: 767px") srcset="img/cliffs-smbasket.jpg">
+            <source media="(min-width: 768px") srcset="images_src/cliffs-basket-300_2x.jpg 2x, images_src/cliffs-basket-300_1x.jpg 1x">
+            <img src="img/cliffs-basket.jpg" class="img-responsive" alt="dog in basket.pic">
+          </picture>
+          
         </div>
       </div>
     </div><!-- thumbnail end -->
     
    
     <section id="about" >
-      <div class="row about-pg">
+      <div class="row-fluid about-pg">
         <div class="col-sm-12 about-head">
           <h1>About</h1>
         </div>
         <div class="col-xs-12 col-sm-12 text-flash" >
           <h3> I enjoy <div id="rotate"> <div>creation</div> <div>novelty</div> <div>laughter</div><div>peace</div><div>and flashing</div><div>words</div></div></h3></div>
         
-          <div class="portrait">
-            <img src="img/portrait.jpg" alt="portrait pic">
+
+          <div class="portrait" id="portrait">
+            <img src="img/portrait.jpg">
+              
+          
           </div>
+            
           <div class"write-up">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh tellus, scelerisque eget ullamcorper nec, sagittis vitae velit. Curabitur magna mi, vehicula ac diam a, efficitur posuere magna. Donec venenatis porttitor dictum. Phasellus tincidunt, nisl eget mattis dapibus, nisl mi sodales enim, sed vestibulum lorem tortor sit amet nunc. Ut vehicula varius tellus ut suscipit. Proin sollicitudin massa in mauris dapibus ornare. Fusce vitae dictum lectus. Nunc euismod dolor vitae turpis ornare egestas. Cras non elit at ante pretium vehicula non sed lectus. Sed posuere molestie massa sed tristique. Pellentesque facilisis metus eget eleifend ultricies. Pellentesque lobortis sem id luctus vestibulum.
             </p>
@@ -117,7 +148,7 @@
           
     </section>
     <section id="contact">
-      <div class="row contact-pg">
+      <div class="row-fluid contact-pg">
         <div class="col-sm-12 contact-head">
           <h1> Contact</h1>
         </div>
@@ -193,7 +224,7 @@
 })(jQuery);
 
  $(document).ready(function() {
-        $('#rotate').rotaterator({fadeSpeed:400, pauseSpeed:700});
+        $('#rotate').rotaterator({fadeSpeed:800, pauseSpeed:2000});
  });
     </script>
  
@@ -214,7 +245,6 @@ $(document).ready(function(){
      $("#myCarousel").carousel();
 });
 </script>
--->
 
 </body>
 
