@@ -41,8 +41,9 @@ video {
 
 }
 
-img {
-	padding: 10px 0;
+
+img:last-of-type {
+	margin-right: 0;
 }
 p {
 	font-size: 16px;
@@ -56,6 +57,19 @@ button {
 	z-index: 100;
 }
 
+.first-pg, 
+.about-pg, 
+.thumbnail,
+.contact-pg
+{
+	height: 100vh;
+	background-color: red;
+}
+
+.first-pg {
+	margin-top: 20px;
+
+}
 
 .text-flash {
 	
@@ -73,9 +87,7 @@ button {
 	
 }
 
-.featured {
-	max-width: 50%;
-}
+
 
 .logo {
 	display:block;
@@ -99,3 +111,5 @@ button {
 	width: 100%;
 	padding: 10px;
 }
+
+
