@@ -1,20 +1,27 @@
+/* Typography styles */
 h1 {
   font-family: 'Alfa Slab One', futura, helvetica, sans-serif;
 }
+
 
 h2,
 h3 {
   font-family: futura, helvetica, arial, sans-serif;
 }
 
+
 p {
   font-family: arial, helvetica, sans-serif;
 }
-/*@media screen and (min-width: 992px) {
-	.container-fluid{
-		width: 992px;
-	}
 
+
+li a {
+	font-family: arial, helvetica, arial, sans-serif;
 }
 
-@media screen and (min-width: 961px) {}
+
+p {
+	padding: 6%;
+	font-size: 16px;
+	line-height: 1.2em;
+}

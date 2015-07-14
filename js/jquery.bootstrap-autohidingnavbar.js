@@ -201,5 +201,5 @@
     }
 
   };
-
+ $("nav.navbar-fixed-top").autoHidingNavbar();
 })(jQuery, window, document);

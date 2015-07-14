@@ -1,5 +1,4 @@
-
-
+/* Beginning with general stuff */
 * {
 	-webkit-box-sizing: border-box;
 	-moz-box-sizing: border-box;
@@ -8,96 +7,41 @@
 }
 
 
-/*@media only screen and (max-width: 400px) {
-	p {
-		background-color: pink;
-	}
-}
-*/
-
 body {
-	margin-top: 10%;
-	background-color: white;
+	margin-top: 15%;
+	background-color: #3CA6D9;
 	overflow-x: hidden;
 }
-  .container-fluid {
-	max-width: 960px;
+
+
+ .container-fluid {
+	max-width: 788px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #86BC99;
+	background-color: #70CEFC;
 }
 
-/* Class */
-.center-block {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
 
+/* Images and icons */
 img,
 embed,
 object, 
 video {
 	max-width: 100%;
+}
 
+
+img {
+	padding: 10px 0;
 }
 
 
 img:last-of-type {
 	margin-right: 0;
 }
-p {
-	padding: 6%;
-	font-size: 16px;
-	line-height: 1.2em;
-}
-
-nav a,
-button {
-	min-width: 48px;
-	min-height: 48px;
-	z-index: 100;
-}
-
-.first-pg, 
-.about-pg, 
-.thumb-nail,
-.contact-pg
-{
-	height: 100vh;
-	background-color:#9BD6D9;
-}
-
-.first-pg {
-	margin-top: 20px;
-
-}
-
-.logo {
-	margin-left: 1%;
-	
-}
-@media only screen and (max-width: 767px) {
-	.logo {
-		margin-top: 5%;
-		height:100px;
-		width:100px;
-		z-index: 100;
-	}
-}
-
-@media only screen and (min-width: 768px) {
-	.logo {
-		margin-top:5%;
-		height: 160px;
-		width: 160px;
-		z-index: 100;
-	}
-}
 
 
-
-.portrait {
+.portrait-pic {
 	
 	width: 40%;
 	float: left;
@@ -105,31 +49,106 @@ button {
 
 }
 
-.write-up {
-	width: 100%;
-	padding: 10px;
+
+.logo {
+	margin-top: 10%;
+	height:100px;
+	width:100px;
+	z-index: 100;
 }
 
-.text-lft {
-	
-	padding-left:10vw;
+
+.social-media-icons {
+	text-align: center;
 }
+
+
+/* Navigation and buttons*/
+nav a,
+button {
+	min-width: 48px;
+	min-height: 48px;
+	z-index: 100;
+}
+
+
+/* Sections of content */
+.first-pg, 
+.about-pg, 
+.portfolio-pg,
+.contact-pg {
+	padding-bottom: 300px;
+	background-color:#AEF0FF;
+	margin: 5px;
+}
+
+
+.write-up {
+	width: 100%;
+	margin-top: 2%;
+	padding-top: 70px;
+}
+
 
 .text-flash {
 	padding: 0 6%; 
 }
+
 
 .my-name {
 	margin-top:5%;
 	right: 2%;
 }
 
+
 .header {
 	padding: 3% 6%;
 }
 
 
+.head-line {
+	padding: 0 6%;
+}
+
+
 footer {
 	text-align: center;
-	margin-bottom: 10%;
+	margin-bottom: 15%;
+}
+
+
+/* Responsive break points */
+@media only screen and (min-width: 768px) {
+	body {
+	 	
+		background-color: #3CA6D9;
+		margin-top: 10%;
+	}
+	.container-fluid{
+		max-width: 760px;
+	}
+	.logo {
+		margin-left: 10%;
+		height:160px;
+		width:160px;
+		z-index: 100;
+	}
+}
+
+
+@media only screen and (min-width: 992px) {
+	body {
+	 	
+		
+		margin-top: 5%;
+	}
+	.container-fluid{
+		max-width: 992px;
+	}
+	.logo {
+		margin-top:5%;
+		height: 210px;
+		width: 210px;
+		z-index: 100;
+	}
 }
