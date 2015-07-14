@@ -3,12 +3,12 @@
 
   <head>
     <title>John's Portfolio</title>
-  	<meta charset="utf-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
   	<link href="//normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
-    <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
+    <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet'>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet">
     <!-- Jquery script--> 
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
       <!-- Latest compiled and minified JavaScript -->
@@ -40,11 +40,11 @@
           <li><a href="#about">About</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-      </nav><!-- end navbar collapse -->    
+      </nav><!-- end navbar collapse -->
     </nav> <!-- navbar ends here -->
     <div class="container-fluid">
       <section class="row first-pg" id="index">
-        <header>  
+        <header>
           <div class="col-xs-4 col-sm-2">
             <img src="img/namelogo.svg" class="logo" alt="logo image">
           </div>
@@ -119,7 +119,7 @@
         <article class="write-up">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh tellus, scelerisque eget ullamcorper nec, sagittis vitae velit. Curabitur magna mi, vehicula ac diam a, efficitur posuere magna. Donec venenatis porttitor dictum. Phasellus tincidunt, nisl eget mattis dapibus, nisl mi sodales enim, sed vestibulum lorem tortor sit amet nunc. Ut vehicula varius tellus ut suscipit. Proin sollicitudin massa in mauris dapibus ornare. Fusce vitae dictum lectus. Nunc euismod dolor vitae turpis ornare egestas. Cras non elit at ante pretium vehicula non sed lectus. Sed posuere molestie massa sed tristique. Pellentesque facilisis metus eget eleifend ultricies. Pellentesque lobortis sem id luctus vestibulum.
           </p>
-        </article> 
+        </article>
           
       </section>
       <section class="row contact-pg" id="contact">
@@ -139,9 +139,9 @@
         </div>
       </section>
 
-      <footer>&copy;John Meas 2015 | All Rights Reserved 
+      <footer>&copy;John Meas 2015 | All Rights Reserved
       </footer>
-    </div> <!-- container-fluid end -->   
+    </div> <!-- container-fluid end -->
     <!-- TODO place these scripts somewhere other than the html page -->
     <script>
       $('.nav a').on('click', function(){
@@ -154,17 +154,12 @@
       $('.navbar-nav a').click(function() {
       var href = $.attr(this, 'href');
       $root.animate({
-        scrollTop: $(href).offset().top 
+        scrollTop: $(href).offset().top
         }, 500, function () {
         window.location.hash = href;
         });
         return false;
       });
     </script>
-    <script src="js/jquery.lettering.js"></script>
-    <script src="js/jquery.textillate.js"></script>
-     
-
   </body>
-
 </html>
