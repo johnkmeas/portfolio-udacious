@@ -2,10 +2,11 @@
 <html lang="en">
 
   <head>
+    <title>John's Portfolio</title>
   	<meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-  	<link src="//normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
+  	<link href="//normalize-css.googlecode.com/svn/trunk/normalize.css" rel="stylesheet">
     <link href='http://fonts.googleapis.com/css?family=Alfa+Slab+One' rel='stylesheet' type='text/css'>
     <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css" rel="stylesheet"> 
     <!-- Jquery script--> 
@@ -16,11 +17,10 @@
     <link href="css/styles.css" rel="stylesheet">
     <link href="css/animate.css" rel="stylesheet">
     <link href="css/zocial.css" rel="stylesheet">
-  
   </head>
 
   <body data-spy="scroll" data-offset="0" data-target=".navbar">
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
       <nav class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
@@ -32,7 +32,7 @@
       </nav>
       <nav class="navbar-collapse collapse">
         <div class="projectname">
-          <a ref="#">Portfolio</a>
+          <a href="#">Portfolio</a>
         </div>
         <ul class="nav navbar-nav">
           <li><a href="#index">Home</a></li>
@@ -46,30 +46,26 @@
       <section class="row first-pg" id="index">
         <header>  
           <div class="col-xs-4 col-sm-2">
-            <img src="img/namelogo.svg" class="logo">
+            <img src="img/namelogo.svg" class="logo" alt="logo image">
           </div>
-          <header class="col-xs-8 col-sm-10 my-name text-right">
+          <div class="col-xs-8 col-sm-10 my-name text-right">
             <h1>
               John Meas
             </h1>
-            <h3>
+            <h2>
               Frontend Web Developer
-            </h3>
-          </header>
+            </h2>
+            <hr>
+          </div>
         </header>
         <div class="col-xs-12 col-sm-4 head-line">
-          <h2 class="tlt"> 
-            <ul class="texts">
-              <li data-out-effect="flipInX" data-out-sequence="true">Buzz Word</li>   
-              <li data-in-effect="fadeIn">Something Awesome</li>
-            </ul>
-          </h2>
+          <h3>Some words about something awesome</h3>
         </div>
-        <div class="col-xs-4" alt="empty column">
+        <div class="col-xs-4"> <!--empty box-->
         </div>
         <div class="col-xs-8 col-sm-6 splash-img">
           <picture>
-            <source media="(min-width: 768px") srcset="img/cliff-splash.png">
+            <source media="(min-width: 768px)" srcset="img/cliff-splash.png">
             <img src="img/cliff-smsplash.png" class="img-responsive" alt="dog clifford pic">
           </picture>
         </div>
@@ -82,29 +78,29 @@
           </header>
           <div class="col-xs-6 col-sm-3">
             <picture>
-              <source media="(max-width: 767px") srcset="img/cliff-smbars.jpg">
-              <source media="(min-width: 768px") srcset="images_src/cliffs-bars-300_2x.jpg 2x, images_src/cliffs-bars-300_1x.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/cliff-smbars.jpg">
+              <source media="(min-width: 768px)" srcset="images_src/cliffs-bars-300_2x.jpg 2x, images_src/cliffs-bars-300_1x.jpg 1x">
               <img src="img/cliffs-bars.jpg" class="img-responsive" alt="dog in jail pic">
             </picture>
           </div>
           <div class="col-xs-6 col-sm-3">
             <picture>
-              <source media="(max-width: 767px") srcset="img/cliffs-smcape.jpg">
-              <source media="(min-width: 768px") srcset="images_src/cliffs-cape-300_2x.jpg 2x, images_src/cliffs-cape-300_1x.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/cliffs-smcape.jpg">
+              <source media="(min-width: 768px)" srcset="images_src/cliffs-cape-300_2x.jpg 2x, images_src/cliffs-cape-300_1x.jpg 1x">
               <img src="img/cliffs-cape.jpg" class="img-responsive" alt="tree pic">
             </picture>
           </div>
           <div class="col-xs-6 col-sm-3">
             <picture>
-              <source media="(max-width: 767px") srcset="img/cliff-smbear.jpg">
-              <source media="(min-width: 768px") srcset="images_src/cliffs-bear-300_2x.jpg 2x, images_src/cliffs-bear-300_1x.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/cliff-smbear.jpg">
+              <source media="(min-width: 768px)" srcset="images_src/cliffs-bear-300_2x.jpg 2x, images_src/cliffs-bear-300_1x.jpg 1x">
               <img src="img/cliffs-bear.jpg" class="img-responsive" alt="dog cuddle pic">
             </picture>
           </div>
           <div class="col-xs-6 col-sm-3">
             <picture>
-              <source media="(max-width: 767px") srcset="img/cliffs-smbasket.jpg">
-              <source media="(min-width: 768px") srcset="images_src/cliffs-basket-300_2x.jpg 2x, images_src/cliffs-basket-300_1x.jpg 1x">
+              <source media="(max-width: 767px)" srcset="img/cliffs-smbasket.jpg">
+              <source media="(min-width: 768px)" srcset="images_src/cliffs-basket-300_2x.jpg 2x, images_src/cliffs-basket-300_1x.jpg 1x">
               <img src="img/cliffs-basket.jpg" class="img-responsive" alt="dog in basket.pic">
             </picture>
           </div>
@@ -115,10 +111,10 @@
           <h1>About</h1>
         </header>
         <div class="col-xs-12 col-sm-12 text-flash" >
-          <h2> I enjoy <div id="rotate"> <div>creativity</div> <div>novelty</div> <div>laughter</div><div>peace</div><div>flashing words</div></div></h2>
+          <h2>I am John</h2>
         </div>
         <div class="col-xs-12 col-sm-12 portrait-pic" id="portrait-pic">
-          <img src="img/portrait.jpg">
+          <img src="img/portrait.jpg" alt="portrait photo of me">
         </div>
         <article class="write-up">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nibh tellus, scelerisque eget ullamcorper nec, sagittis vitae velit. Curabitur magna mi, vehicula ac diam a, efficitur posuere magna. Donec venenatis porttitor dictum. Phasellus tincidunt, nisl eget mattis dapibus, nisl mi sodales enim, sed vestibulum lorem tortor sit amet nunc. Ut vehicula varius tellus ut suscipit. Proin sollicitudin massa in mauris dapibus ornare. Fusce vitae dictum lectus. Nunc euismod dolor vitae turpis ornare egestas. Cras non elit at ante pretium vehicula non sed lectus. Sed posuere molestie massa sed tristique. Pellentesque facilisis metus eget eleifend ultricies. Pellentesque lobortis sem id luctus vestibulum.
