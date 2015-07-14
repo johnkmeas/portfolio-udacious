@@ -9,7 +9,7 @@
 
 body {
 	margin-top: 15%;
-	background-color: #3CA6D9;
+	background-color: #3ca6d9;
 	overflow-x: hidden;
 }
 
@@ -18,14 +18,14 @@ body {
 	max-width: 788px;
 	margin-left: auto;
 	margin-right: auto;
-	background-color: #70CEFC;
+	background-color: #70cefc;
 }
 
 
 /* Images and icons */
 img,
 embed,
-object, 
+object,
 video {
 	max-width: 100%;
 }
@@ -52,8 +52,8 @@ img:last-of-type {
 
 .logo {
 	margin-top: 10%;
-	height:100px;
-	width:100px;
+	height: 100px;
+	width: 100px;
 	z-index: 100;
 }
 
@@ -73,12 +73,12 @@ button {
 
 
 /* Sections of content */
-.first-pg, 
-.about-pg, 
+.first-pg,
+.about-pg,
 .portfolio-pg,
 .contact-pg {
 	padding-bottom: 300px;
-	background-color:#AEF0FF;
+	background-color: #aef0ff;
 	margin: 5px;
 }
 
@@ -121,16 +121,18 @@ footer {
 @media only screen and (min-width: 768px) {
 	body {
 	 	
-		background-color: #3CA6D9;
+		background-color: #3ca6d9;
 		margin-top: 10%;
 	}
+
 	.container-fluid{
 		max-width: 760px;
 	}
+
 	.logo {
 		margin-left: 10%;
-		height:160px;
-		width:160px;
+		height: 160px;
+		width: 160px;
 		z-index: 100;
 	}
 }
@@ -139,14 +141,15 @@ footer {
 @media only screen and (min-width: 992px) {
 	body {
 	 	
-		
 		margin-top: 5%;
 	}
+
 	.container-fluid{
 		max-width: 992px;
 	}
+
 	.logo {
-		margin-top:5%;
+		margin-top: 5%;
 		height: 210px;
 		width: 210px;
 		z-index: 100;
