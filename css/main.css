@@ -42,11 +42,10 @@ img:last-of-type {
 
 
 .portrait-pic {
-	
+
 	width: 40%;
 	float: left;
 	padding: 2%;
-
 }
 
 
@@ -91,12 +90,12 @@ button {
 
 
 .text-flash {
-	padding: 0 6%; 
+	padding: 0 6%;
 }
 
 
 .my-name {
-	margin-top:5%;
+	margin-top: 5%;
 	right: 2%;
 }
 
@@ -120,7 +119,7 @@ footer {
 /* Responsive break points */
 @media only screen and (min-width: 768px) {
 	body {
-	 	
+
 		background-color: #3ca6d9;
 		margin-top: 10%;
 	}
@@ -140,7 +139,7 @@ footer {
 
 @media only screen and (min-width: 992px) {
 	body {
-	 	
+
 		margin-top: 5%;
 	}
 
